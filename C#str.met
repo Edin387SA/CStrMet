@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace MyFirstProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String Ime = "Edin Bascaus";
+            String brojTelefona = "061-000-000";
+
+            Ime = Ime.ToUpper();
+            Ime = Ime.ToLower();
+            Console.WriteLine(Ime);
+
+            brojTelefona = brojTelefona.Replace("-","");
+            Console.WriteLine(brojTelefona);
+
+            String korisnickoIme = Ime.Insert(0,"Mr.");
+            Console.WriteLine(korisnickoIme);
+
+            Console.WriteLine(Ime.Length);
+
+            String SIme = Ime.Substring(0, 3);
+            String Prezime = Ime.Substring(4, 4);
+
+            Console.WriteLine(SIme);
+            Console.WriteLine(Prezime);
+
+            Console.ReadKey();
+        }
+    }
+}
